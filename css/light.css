@@ -1,0 +1,18 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+main {
+  background-color: aqua;
+}
+#banner {
+  background-color: black;
+}
+#bannerOverlay {
+  color: white;
+}
+
+#logo {
+  width: 5rem;
+  height: 5rem;
+}
