@@ -1,18 +1,40 @@
+/* Tags */
 body {
   padding: 0%;
   margin: 0%;
 }
 main {
-  background-color: aqua;
+  background-color: #e6e6e6;
 }
-#banner {
+footer {
+  background-color: #cccccc;
+}
+
+/* IDs */
+#homeMain {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+#hero {
   background-color: black;
 }
 #bannerOverlay {
   color: white;
 }
-
 #logo {
   width: 5rem;
   height: 5rem;
+}
+#footerSocial {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Classes */
+.card {
+  text-align: center;
+}
+
+.col {
+  outline-style: solid;
 }
