@@ -14,18 +14,16 @@
       crossorigin="anonymous"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/light.css" id="theme" />
   </head>
 
   <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <!-- Logo in NavBar -->
         <a class="navbar-brand" href="index.html"
-          ><img src="img/skewer.png" id="logo" alt="SkewerLogo"
+          ><img src="img/skewer.png" id="logo" alt=""
         /></a>
-        <!-- Hamburger Button for Narrow Screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -61,6 +59,7 @@
             <p class="m-0">Dark mode</p>
             <form class="form-check form-switch form-check-reverse">
               <input
+                onclick="changeTheme()"
                 class="form-check-input"
                 type="checkbox"
                 id="flexSwitchCheckReverse"
@@ -71,9 +70,111 @@
       </div>
     </nav>
 
+    <!-- Hero -->
+    <header class="d-flex justify-content-center" id="hero"></header>
+
     <!-- Main -->
-    <main></main>
+    <main class="py-1">
+      <div class="container py-3" id="homeMain">
+        <div class="container text-center">
+          <div class="row row-cols-2 d-flex align-items-center">
+            <!-- Foods -->
+            <div class="col">
+              <h1>Food</h1>
+              <div class="row d-flex align-items-center">
+                <div class="col">Name</div>
+                <div class="col">On its own</div>
+                <div class="col">With two sides</div>
+                <div class="col">SkewerHouse Special</div>
+              </div>
+              <div class="row">
+                <div class="col">Lamb</div>
+                <div class="col">£22</div>
+                <div class="col">£27</div>
+                <div class="col">£36</div>
+              </div>
+              <div class="row">
+                <div class="col">Beef</div>
+                <div class="col">£22</div>
+                <div class="col">£27</div>
+                <div class="col">£36</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">Pork</div>
+                <div class="col">£21</div>
+                <div class="col">£26</div>
+                <div class="col">£35</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">Chicken (Breast)</div>
+                <div class="col">£21</div>
+                <div class="col">£26</div>
+                <div class="col">£35</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">Chicken & Chourico</div>
+                <div class="col">£21</div>
+                <div class="col">£26</div>
+                <div class="col">£35</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">King Prawn</div>
+                <div class="col">£28.50</div>
+                <div class="col">£33.50</div>
+                <div class="col">£42</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">K.Prawn & Squid</div>
+                <div class="col">£28.50</div>
+                <div class="col">£33.50</div>
+                <div class="col">£42</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">K.Prawn & Chourico</div>
+                <div class="col">£28.50</div>
+                <div class="col">£33.50</div>
+                <div class="col">£42</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">Mixed Fish</div>
+                <div class="col">£22</div>
+                <div class="col">£27</div>
+                <div class="col">£32</div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col">Vegetables & Halloumi</div>
+                <div class="col">£18</div>
+                <div class="col">£23</div>
+                <div class="col">£32</div>
+              </div>
+            </div>
+
+            <div class="col"><h1>Drink</h1></div>
+            <div class="col">Food</div>
+            <div class="col">Food</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- Footer -->
+    <footer>
+      <div class="container py-1">
+        <!-- Copyright -->
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-1 d-flex justify-content-center">©SkewerHouse</div>
+          <!-- Social Media Icons -->
+          <div class="col-1 d-flex justify-content-center">
+            <a href="https://www.instagram.com/skewerhousetaunton/?hl=en"
+              ><img src="img/instagram.png" alt="instagram" id="footerSocial"
+            /></a>
+            <a href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB"
+              ><img src="img/facebook.png" alt="Facebook" id="footerSocial"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <!-- Bootstrap CDN -->
