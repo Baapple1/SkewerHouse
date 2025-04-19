@@ -8,6 +8,7 @@ main {
 }
 footer {
   background-color: #cccccc;
+  height: 100%;
 }
 
 /* IDs */
@@ -32,12 +33,15 @@ footer {
   width: 2rem;
   height: 2rem;
 }
+#tblRow {
+  outline-style: dotted;
+}
+
+#flavour {
+  font-size: 10px;
+}
 
 /* Classes */
 .card {
   text-align: center;
-}
-
-.col {
-  outline-style: solid;
 }
