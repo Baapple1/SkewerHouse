@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkewerHouse</title>
+    <link rel="icon" href="img/skewer.png" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/light.css" id="theme" />
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/skewer.png" id="logo" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-end pe-5"
+          id="navbarNav"
+        >
+          <!-- Dark Mode Switch -->
+          <span class="d-flex">
+            <p class="m-0">Dark mode</p>
+            <form class="form-check form-switch form-check-reverse">
+              <input
+                onclick="changeTheme()"
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckReverse"
+              />
+            </form>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-1">
+      <div class="container text-center">
+        <div class="py-1 my-2" id="homeMain">
+          <h3>About SkewerHouse</h3>
+          <p>
+            A family run Restaurant serving "Espetadas", traditional Madeiran
+            skewers. <br />Our family is from the island of Madeira, a small
+            Portuguese island in the middle of the Atlantic Ocean. <br />The
+            Skewer House is our slice of Madeira in Taunton. <br />Mum has run
+            her Restaurant 'O' Picado' since 2003 in Essex. <br />Mums
+            restaurant serves a varied range Portuguese dishes. <br />Espetada
+            quickly became a customer favourite.
+          </p>
+          <p class="pt-1">
+            We moved to Somerset in 2014. quickly realising that Somerset could
+            benefit from some Portuguese flavour. <br />We found the perfect
+            listed building in Taunton and set out creating this amazing space.
+            <br />We wanted the space to be reminiscent of a traditional "Casa
+            De Espetada", "a skewer house". <br />We sourced wood from the
+            Quantocks and made the tables, the crockery from Madeira and the
+            church pews from a church in Bridgwater. <br />Focusing on every
+            detail to transform the building into what it is today. <br />We
+            opened our doors 16th October 2016.
+          </p>
+          <p class="pt-1">
+            We have slowly become one of the best restaurants in Taunton, with a
+            reputation that we are extremely proud of.
+          </p>
+          <p class="pt-1">
+            Following our success, we decided to open a new Restaurant with our
+            sister Sofia. <br />On the 27th September 2019, we opened
+            <span
+              ><a href="https://www.nobregas.co.uk/"
+                >"Nobregas Tapas & Paella"</a
+              ></span
+            >
+            run by our sister and her amazing team, which then sadly closed its
+            doors October 2023.
+          </p>
+          <p class="pt-1">
+            January 2021, Sofia took over the Skewer House & opened a Brunch &
+            Dessert Parlour with her partner Pedro in January 2022, which is
+            located on Bath Place, called
+            <span
+              ><a href="https://www.cornerclubtaunton.co.uk/"
+                >Corner Club</a
+              ></span
+            >. They sell our super popular cheesecakes, Nobrega's homemade
+            Cronuts and Club's signature Cookie Pie! You can also find homage to
+            our restaurants in form of a Skewer House & Nobregas Bagel as well
+            as other delicious savoury & sweet dishes.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container py-1">
+        <!-- Copyright -->
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-1 d-flex justify-content-center">
+            ©SkewerHouseTaunton
+          </div>
+          <!-- Social Media Icons -->
+          <div class="col-1 d-flex justify-content-center">
+            <a href="https://www.instagram.com/skewerhousetaunton/?hl=en"
+              ><img src="img/instagram.png" alt="instagram" id="footerSocial"
+            /></a>
+            <a href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB"
+              ><img src="img/facebook.png" alt="Facebook" id="footerSocial"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Bootstrap CDN -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Theme -->
+  <script src="js/theme.js"></script>
+</html>
