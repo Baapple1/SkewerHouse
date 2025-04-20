@@ -38,15 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html">Booking</a>
             </li>
           </ul>
         </div>
@@ -75,7 +76,7 @@
       <div class="container py-3" id="homeMain">
         <!-- Cards: -->
         <div class="container grid">
-          <div class="card-group">
+          <div class="card-group py-1">
             <!-- Card 1 -->
             <div class="card mx-5" style="width: 18rem">
               <img
@@ -145,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="card-group">
+          <div class="card-group py-1">
             <!-- Card 4 -->
             <div class="card mx-5" style="width: 18rem">
               <img
@@ -168,6 +169,71 @@
                 </button>
               </div>
             </div>
+            <!-- Card 5 -->
+            <div class="card mx-5" style="width: 18rem">
+              <img
+                src="img/skwrHseFood2.jpg"
+                class="card-img-top"
+                alt="MenuImg"
+                style="height: 218px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wines & Cocktails</h5>
+                <p class="card-text"></p>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#wineModal"
+                >
+                  Click to Open
+                </button>
+              </div>
+            </div>
+            <!-- Card 6-->
+            <div class="card mx-5" style="width: 18rem">
+              <img
+                src="img/skwrHseFood2.jpg"
+                class="card-img-top"
+                alt="MenuImg"
+                style="height: 218px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Takeaway</h5>
+                <p class="card-text"></p>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#takeawayModal"
+                >
+                  Click to Open
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card-group py-1">
+            <!-- Card 7 -->
+            <div class="card mx-5" style="width: 18rem">
+              <img
+                src="img/cheesecake.png"
+                class="card-img-top"
+                alt="MenuImg"
+                style="height: 218px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cheesecakes</h5>
+                <p class="card-text">
+                  Our Homemade Cheesecakes are available every evening on the
+                  dessert menu and change daily. We take Whole Custom Cheesecake
+                  orders too! You can find pictures of our creations on our
+                  Instagram Please contact us for further information via email
+                  skewerhousetaunton@gmail.com or our Facebook Business Page
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -178,13 +244,20 @@
       <div class="container py-1">
         <!-- Copyright -->
         <div class="row d-flex justify-content-evenly">
-          <div class="col-1 d-flex justify-content-center">©SkewerHouse</div>
+          <div class="col-1 d-flex justify-content-center">
+            ©SkewerHouseTaunton
+            <br />skewerhousetaunton@gmail.com
+          </div>
           <!-- Social Media Icons -->
           <div class="col-1 d-flex justify-content-center">
-            <a href="https://www.instagram.com/skewerhousetaunton/?hl=en"
+            <a
+              class="d-flex align-items-center"
+              href="https://www.instagram.com/skewerhousetaunton/?hl=en"
               ><img src="img/instagram.png" alt="instagram" id="footerSocial"
             /></a>
-            <a href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB"
+            <a
+              class="d-flex align-items-center"
+              href="https://www.facebook.com/skewerhousetaunton/?locale=en_GB"
               ><img src="img/facebook.png" alt="Facebook" id="footerSocial"
             /></a>
           </div>
@@ -192,9 +265,10 @@
       </div>
     </footer>
   </body>
+
   <!-- Modals -->
+  <!-- Skewer -->
   <modal>
-    <!-- Skewer -->
     <div
       class="modal fade"
       id="foodModal"
@@ -308,7 +382,6 @@
               aria-label="Close"
             ></button>
           </div>
-          <!-- Sides -->
           <div class="modal-body">
             <div class="row d-flex align-items-center my-1" id="tblRow">
               <div class="col text-center">Name</div>
@@ -359,8 +432,8 @@
       </div>
     </div>
   </modal>
+  <!-- Drinks -->
   <modal>
-    <!-- Drinks -->
     <div
       class="modal fade"
       id="drinkModal"
@@ -422,17 +495,17 @@
               <div class="col text-center">£5.50</div>
             </div>
             <div class="row d-flex align-items-center my-1" id="tblRow">
-              <div class="col text-center">
+              <div class="col text-center px-0">
                 Compal Fruit Juice
                 <span>
                   <div class="row d-flex align-items-center" id="flavour">
-                    <p class="text-center mb-0">
+                    <p class="text-center mb-0 px-0">
                       Apple/Orange/Pineapple/Mango/Passionfruit
                     </p>
                   </div></span
                 >
               </div>
-              <div class="col text-center">£3.50</div>
+              <div class="col text-center px-0">£3.50</div>
             </div>
             <div class="row d-flex align-items-center my-1" id="tblRow">
               <div class="col text-center">
@@ -493,8 +566,8 @@
       </div>
     </div>
   </modal>
+  <!-- Starters -->
   <modal>
-    <!-- Starters -->
     <div
       class="modal fade"
       id="starterModal"
@@ -566,7 +639,380 @@
       </div>
     </div>
   </modal>
-
+  <!-- Takeaway -->
+  <modal>
+    <div
+      class="modal fade"
+      id="takeawayModal"
+      tabindex="-1"
+      aria-labelledby="takeawayTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="takeawayTitle">Takeaway</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Skewer -->
+          <div class="modal-body">
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Name</div>
+              <div class="col text-center">Price</div>
+              <div class="col text-center">Extra</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Lamb</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Beef</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Pork</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Chicken (Breast)</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Chicken & Chourico</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">King Prawn</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">K.Prawn & Squid</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">K.Prawn & Chourico</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Mixed Fish</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Vegetables & Halloumi</div>
+              <div class="col text-center">£15</div>
+              <div class="col text-center">£4</div>
+            </div>
+          </div>
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 col" id="sidesTitle">Sides</h1>
+            <p class="row mb-0 pe-2">Choice of 3</p>
+          </div>
+          <div class="modal-body">
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Name</div>
+              <div class="col text-center">Price</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Salad</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Skin on Chips</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Sweet Potato Fries</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Spicy Rice</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Seasonal Greens</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Saute Potatoes</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Fried Maize</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Corn Cob</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Halloumi</div>
+              <div class="col text-center">£4</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Coleslaw</div>
+              <div class="col text-center">£4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </modal>
+  <!-- Wines & Cocktails -->
+  <modal>
+    <div
+      class="modal fade"
+      id="wineModal"
+      tabindex="-1"
+      aria-labelledby="wineTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="wineTitle">Wine List</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Wines -->
+          <div class="modal-body">
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <h4 class="text-center">Red</h4>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Name</div>
+              <div class="col text-center">Price</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Adega de Borba
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">DOC Alentejo - 13.5%</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£23.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Quinta de Cabriz
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">DOC DAO - 13%</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£30.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <h4 class="text-center">White</h4>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Adega de Borba
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">DOC Alentejo - 13%</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£23.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Quinta de Cabriz
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">DOC DAO - 12.5%</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£30.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <h4 class="text-center">Rose</h4>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Casal Garcia Rose
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">
+                      Fruity, Enhanced notes of berry - 9.5%
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£23.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <h4 class="text-center">Rose</h4>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Casal Garcia Verde
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Crisp, smooth & dry - 9.5%</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£23.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <h4 class="text-center">House Wine</h4>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Red/Rose/White
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Glass 125ml(S)</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£3.50</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Red/Rose/White
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Glass 175ml (M)</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£5</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Red/Rose/White
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Glass 250ml (L)</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£7.50</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center px-0">
+                Red/Rose/White
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Bottle</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£18.95</div>
+            </div>
+          </div>
+          <!-- Cocktails -->
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 col" id="sidesTitle">Cocktail List</h1>
+          </div>
+          <div class="modal-body">
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">Name</div>
+              <div class="col text-center">Price</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Morangoa
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Strawberries, Lime & Vodka</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Caipirinha
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">Lime, Sugar & Cachaca</p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Brandy Passion
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">
+                      Brandy, Passionfruit & Grenadine
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Poncha Maracuja
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">
+                      Aguardente, Passionfruit & Honey
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                Poncha Tranditional
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">
+                      Aguardente, Lemons, Oranges & Honey
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+            <div class="row d-flex align-items-center my-1" id="tblRow">
+              <div class="col text-center">
+                The SkewerHouse Special
+                <span>
+                  <div class="row d-flex align-items-center" id="flavour">
+                    <p class="text-center my-0">
+                      Rum, Passionfruit, Strawberry & Grenadine
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="col text-center">£9.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </modal>
   <!-- Bootstrap CDN -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
