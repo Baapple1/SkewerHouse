@@ -1,0 +1,92 @@
+/* Tags */
+body {
+  padding: 0%;
+  margin: 0%;
+  background: #282828;
+}
+main {
+  background-color: #3f3f3f;
+}
+footer {
+  background-color: #282828;
+  height: 100%;
+  color: #f2f2f2;
+}
+h1 {
+  color: #f2f2f2;
+}
+p {
+  color: #f2f2f2;
+}
+a {
+  color: #f2f2f2;
+}
+
+/* IDs */
+#homeMain {
+  background-color: #41434b;
+  border-radius: 30px;
+}
+#hero {
+  background-color: #121212;
+}
+#skwrHseHero {
+  width: 800px;
+}
+#logo {
+  width: 5rem;
+  height: 5rem;
+  background-color: #8b8b8b;
+  border-radius: 20%;
+}
+#footerSocial {
+  width: 2rem;
+  height: 2rem;
+  background-color: #8f8f8c;
+  border-radius: 50%;
+}
+#tblRow {
+  outline-style: dotted;
+  color: #f2f2f2;
+}
+
+#flavour {
+  font-size: 10px;
+}
+
+/* Classes */
+.card {
+  text-align: center;
+  background-color: #3f3f3f;
+  color: #f2f2f2;
+}
+.navbar {
+  background-color: #282828;
+  color: #f2f2f2;
+}
+.nav-link {
+  color: #f2f2f2;
+}
+
+.nav-link:hover {
+  background-color: #f3f3f3;
+  border-radius: 20%;
+}
+.modal-content {
+  background-color: #282828;
+}
+.col.text-center {
+  color: #f2f2f2;
+}
+
+.btn-close {
+  background-color: #f2f2f2;
+}
+
+.navbar-toggler {
+  background-color: #8b8b8b;
+}
+
+.form-label {
+  color: #f2f2f2;
+}
